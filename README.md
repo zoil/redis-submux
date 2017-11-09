@@ -1,5 +1,7 @@
 # Subscriptions multiplexer for Redis
 
+[![NPM](https://nodei.co/npm/redis-submux.png)](https://npmjs.org/package/redis-submux)
+
 A small library that lets you subscribe your callbacks to Redis channels.
 
 ## Installation
