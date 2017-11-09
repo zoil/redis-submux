@@ -1,0 +1,33 @@
+{
+  "name": "redis-submux",
+  "version": "0.0.1",
+  "description": "Subscriptions multiplexer for Redis",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require mocha-steps --recursive --reporter spec --ui bdd test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoil/redis-submux.git"
+  },
+  "keywords": [
+    "redis",
+    "pubsub",
+    "multiplexer"
+  ],
+  "author": "Zoltan Jano <zoltan.jano@gmail.com> (https://github.com/zoil)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoil/redis-submux/issues"
+  },
+  "homepage": "https://github.com/zoil/redis-submux#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mocha-steps": "^1.1.0",
+    "redis-js": "^0.1.2"
+  },
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
