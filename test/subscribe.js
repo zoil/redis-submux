@@ -59,14 +59,16 @@ describe("#subscribe", function() {
       }
     });
   });
-  step("should unsubscribe in redis at second call", function(done) {
-    const channel = "P123";
-    redisSubMux.unsubscribe(channel, callback2, function() {
-      if (redisSubscriptions.length !== 0) {
-        done("Not unsubscribed the second time.");
-      } else {
-        done();
-      }
-    });
-  });
+  step(
+    "should unsubscribe in redis at second call, using unsubscribeAll",
+    function(done) {
+      redisSubMux.unsubscribeAll(callback2, function() {
+        if (redisSubscriptions.length !== 0) {
+          done("Not unsubscribed the second time.");
+        } else {
+          done();
+        }
+      });
+    }
+  );
 });
