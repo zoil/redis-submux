@@ -22,6 +22,7 @@ A small library that lets you subscribe your callbacks to Redis channels.
     }
     redisSubMux.subscribe(channel, callback);
     redisSubMux.unsubscribe(channel, callback);
+    redisSubMux.unsubscribeAll(callback);
 
 ## Test
 
