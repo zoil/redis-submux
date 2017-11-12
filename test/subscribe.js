@@ -2,7 +2,6 @@
 
 var describe = require("mocha").describe;
 var step = require("mocha-steps").step;
-var expect = require("chai").expect;
 var RedisSubMux = require("../lib");
 var redisJs = require("redis-js");
 
